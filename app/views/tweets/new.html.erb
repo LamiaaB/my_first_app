@@ -1,4 +1,6 @@
-Here is where we write new tweets
+Here is where we write new tweets:
+
+
 
 <%= simple_form_for @tweet do |f| %>
 	<%= f.input "content" %>
@@ -6,7 +8,8 @@ Here is where we write new tweets
 
 <% end %>
 
-Here are all the tweets ever made:
+Here are all the tweets ever made:</b><br /><br />
+
 <% @tweets.each do |tweet| %>
-	<%= tweet.content %>
+	<%= tweet.content %><br />
 <% end %>
